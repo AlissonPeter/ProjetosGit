@@ -1,0 +1,83 @@
+body {
+	background-color:#EFE4B0;
+    text-align: center;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+tr:hover {background-color: coral;}
+
+td.selecionado{
+  background-color: #aff7ff;
+}
+
+h1 {
+  background-color: #04AA6D;
+  color: white;
+}
+
+td.titulo {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+td.lista {
+    color: rgb(56, 33, 33);
+    cursor: pointer;
+}
+
+tr.selecionado {
+  color: rgb(170, 37, 37);
+}
+
+
+input.adicionar {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  input.adicionar:hover {background-color: #3e8e41}
+  
+  input.adicionar:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  button.deletar {
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  button.deletar:hover {background-color: #3e8e41}
+
+  button.deletar:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  

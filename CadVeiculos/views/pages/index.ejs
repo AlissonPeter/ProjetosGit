@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Veículos</title>
+  <link rel= "stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <form method="POST">
+    <h1>
+      Cadastro de veículos
+    </h1>
+    <h3>
+      Placa:
+    </h3>
+    <input type="text" name="txtPlaca" />
+    <h3>
+      Marca:
+    </h3>
+    <input type="text" name="txtMarca" />
+    <h3>
+      Modelo:
+    </h3>
+    <input type="text" name="txtModelo" /><br /><br/>
+    <input type="submit" name="acao" value="Adicionar" class="adicionar" method="post"/><br /><br />
+
+    <table type="text" id="tableId" name="tbVeiculo" border="1">
+      <thead>
+        <tr>
+          <td class="titulo"><b>Placa</b></td>
+          <td class="titulo"><b>Marca</b></td>
+          <td class="titulo"><b>Modelo</b></td>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(item of lista){ %>
+          <tr class='selecionado'>
+            <td class="lista"><%= item.placa %></td>
+            <td class="lista"><%= item.marca %></td>
+            <td class="lista"><%= item.modelo %></td>
+          </tr>
+        <% } %>
+    </tbody>
+    </table>
+    <br />
+    <button class="deletar" id="deletarId">Deletar</button>
+    <br /><br />
+  </form>
+</body>
+
+</html>
